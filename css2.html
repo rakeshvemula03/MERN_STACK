@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css task-2</title>
+    <style>
+        .container{
+            font-size: x-large;
+            margin: 30px;
+            border: 2px solid black;
+            width: 250px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+        .navbar{
+            list-style-type:none ;
+            background-color: rgb(163, 229, 229);
+            padding: 10px;
+        }
+        li:hover{
+            background-color: orange;
+        }
+        li a{
+            text-decoration: none;
+        }
+        h2{
+            margin-left: 30px;
+        }
+        .container2{
+            position: absolute;
+            top: 150px;
+            left: 500px;
+            border: 2px solid black;
+            font-size: x-large;
+            /* margin: 30px; */
+            width: 382px;
+            height: 50px;
+            margin-top:55px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgb(3, 66, 255);
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 0px;
+        }
+        .navbar2{
+            float: left;
+            background-color: rgb(206, 206, 206);
+            list-style-type:none ;
+            border-collapse: collapse;
+            padding: 10px;
+            /* border-right: 2px solid blue; */
+        }
+        .navbar2:hover{
+            background-color: grey;
+        }
+        #heading{
+            position: absolute;
+            top: 90px;
+            left: 500px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Vertical Navigation Bar</h2>
+    <div class="container">
+            <li class="navbar"> <a href="">Home</a></li>
+            <li class="navbar"><a href="">Java</a></li>
+            <li class="navbar"><a href="">CSS</a></li>
+            <li class="navbar"><a href="">html</a></li>
+            <li class="navbar"><a href="">Bootstrap</a></li>
+    </div>
+    <h2 id="heading">Horizontal Navigation Bar</h2>
+    <div class="container2">
+            <li class="navbar2"><a href="">Home</a></li>
+            <li class="navbar2"><a href="">Java</a></li>
+            <li class="navbar2"><a href="">CSS</a></li>
+            <li class="navbar2"><a href="">html</a></li>
+            <li class="navbar2"><a href="">Bootstrap </a></li>
+
+    </div>
+</body>
+</html>

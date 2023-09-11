@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg form</title>
+    <style>
+        body{
+            background-color: rgb(171, 47, 97);
+        }
+        .container{
+            margin-left: auto;
+            margin-top: 100px;
+            margin-right: auto;
+            padding: 20px;
+          background-color:rgba(128,21,63) ;  
+          width: 400px;
+          align-items: center;
+          color: white;
+        }
+        #username,#email,#password,#phonenumber,#zipcode,#lang,#about {
+            width:300px;
+            height: 25px;
+            border-color:white;
+            background-color: aliceblue;
+            margin: 5px;
+           padding: 3px;
+           
+        }
+        #lang{
+            height: 25px;
+        }
+        li{
+            list-style-type: none;
+            padding:1 px;
+        }
+        
+        label{
+            font-size: large;
+        }
+       
+       button{
+                margin-top: 20px; 
+                width: 300px;
+                height: 40px;
+                font-weight:700;
+                font-size:20px;
+                background-color: aliceblue;
+                border-radius: 8px;
+               
+        }
+        #gend{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #head{
+            font-size: large;
+        }
+        #male,#female{
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <ul>
+                <li>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="your name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="your email">
+                </li>
+                <li>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password">
+                </li>
+                <li>
+                    <label for="phonenumber">phonenumber</label>
+                    <input type="text" id="phonenumber" >
+                </li>
+                <li id="gend">
+                    <label for="male" id="head">Gender:</label>
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="gender" id="Female">
+                    <label for="other">other</label>
+                    <input type="radio" name="gender" id="other">
+                </li>
+                <li>
+                    <label for="lang">Languages:</label>
+                    <select name="lang" id="lang">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Tamil">Tamil</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="zipcode">Zip code:</label>
+                    <input type="text" id="zipcode" >
+                </li>
+                <li>
+                    <label for="about">About:</label>
+                    <br>
+                    <textarea name="about" id="about" cols="30" rows="5" placeholder="Write about yourself"></textarea>
+                </li>
+                <li>
+                    <button id="reg">Register</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
